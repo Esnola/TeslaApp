@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #212121;
+}
+
+.monitor {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.snack {
+  overflow: hidden;
+  background: #212121;
+  border: 1px solid var(--color-border);
+  border-radius: 8px 0 0 8px;
+  height: 91.5%;
+  width: 45%;
+  margin-bottom: 75px;
+}
+
+.right_box {
+  height: 505px;
+  width: 41%;
+  height: 95%;
+  margin-bottom: 50px;
+}
+
+.mobile_users {
+  background: #212121;
+  color: white;
+  height: 96.6%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  border-left: 1px solid #3b3b3b;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+}
+
+.mobile_header {
+  font-weight: 500;
+  font-family: sans-serif;
+  position: absolute;
+  left: 0;
+  color: #ebebeb;
+  top: 0;
+  font-size: 16px;
+  background: #2f2f2f;
+  border-bottom: 1px solid #3b3b3b;
+  border-left: 1px solid #3b3b3b;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MOBILE_ARROW {
+  display: none;
+}
+
+.mobile_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  margin-top: 25%;
+}
+
+.mobile_ex {
+  font-weight: 400;
+  color: rgb(243, 234, 221);
+  font-size: 28px;
+  text-align: center;
+}
+
+.mobile_ex a {
+  color: red;
+  text-decoration: none;
+}
+
+.stores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.playstore {
+  height: 50px;
+}
+
+.appstore {
+  height: 50px;
+}
+
+.pc_users .mobile_ex {
+  font-size: 18px;
+  width: 80%;
+  text-align: center;
+  margin: 10% auto;
+}
+
+.preview {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+.FOR_MOBILE {
+  display: none;
+}
+
+@media screen and (max-width: 1520px) {
+  .monitor {
+    display: none;
+    visibility: hidden;
+  }
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+  .snack {
+    width: 100%;
+    height: 50vh !important;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .right_box {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .mobile_info {
+    margin-top: 10px;
+  }
+  .pc_users .mobile_ex {
+    margin: 10px auto;
+  }
+  .preview {
+    display: none;
+  }
+  .MOBILE_ARROW {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .mobile_ex {
+    font-size: 18px;
+  }
+  .pc_users .mobile_ex {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .mobile_ex {
+    font-size: 14px;
+  }
+  .pc_users {
+    display: none;
+  }
+  .playstore {
+    height: 35px;
+  }
+  .appstore {
+    height: 35px;
+  }
+  .FOR_MOBILE {
+    display: block;
+  }
+}
